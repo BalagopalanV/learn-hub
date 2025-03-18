@@ -1,20 +1,23 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import ic_navbar from "../../assets/icon/ic_navbar.svg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (menuOpen) {
-      document.body.style.overflow = "hidden"; // Disable scrolling
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = ""; // Enable scrolling
+      document.body.style.overflow = "";
     }
 
     return () => {
-      document.body.style.overflow = ""; // Cleanup on unmount
+      document.body.style.overflow = "";
     };
   }, [menuOpen]);
 
@@ -33,9 +36,36 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden md:flex gap-x-6 text-black text-[1rem]">
-          <li className="cursor-pointer hover:text-gray-500">About us</li>
-          <li className="cursor-pointer hover:text-gray-500">Courses</li>
-          <li className="cursor-pointer hover:text-gray-500">Contact us</li>
+          <li>
+            <Link
+              href="/about-us"
+              className={`cursor-pointer hover:text-gray-500 ${
+                pathname === "/about" ? "text-[#8061FF] font-semibold" : ""
+              }`}
+            >
+              About us
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/courses"
+              className={`cursor-pointer hover:text-gray-500 ${
+                pathname === "/courses" ? "text-[#8061FF] font-semibold" : ""
+              }`}
+            >
+              Courses
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className={`cursor-pointer hover:text-gray-500 ${
+                pathname === "/contact" ? "text-[#8061FF] font-semibold" : ""
+              }`}
+            >
+              Contact us
+            </Link>
+          </li>
         </ul>
 
         <div className="hidden md:block">
@@ -54,8 +84,9 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       <div
-        className={`fixed inset-x-0 bottom-0  bg-gradient-to-r from-[#FFFFFF] to-[#DFEAFD]  shadow-lg z-50 transition-all duration-500 ease-in-out md:hidden ${
+        className={`fixed inset-x-0 bottom-0 bg-gradient-to-r from-[#FFFFFF] to-[#DFEAFD] shadow-lg z-50 transition-all duration-500 ease-in-out md:hidden ${
           menuOpen
             ? "h-[100dvh] opacity-100 translate-y-0"
             : "h-0 opacity-0 translate-y-full"
@@ -70,12 +101,38 @@ const Navbar = () => {
 
         <div className="flex flex-col items-center justify-center h-full p-8">
           <ul className="flex flex-col gap-y-8 text-black text-center text-xl w-full">
-            <li className="cursor-pointer hover:text-gray-500 py-2">
-              About us
+            <li>
+              <Link
+                href="/about"
+                className={`cursor-pointer hover:text-gray-500 ${
+                  pathname === "/about" ? "text-[#8061FF] font-semibold" : ""
+                }`}
+                onClick={() => setMenuOpen(false)}
+              >
+                About us
+              </Link>
             </li>
-            <li className="cursor-pointer hover:text-gray-500 py-2">Courses</li>
-            <li className="cursor-pointer hover:text-gray-500 py-2">
-              Contact us
+            <li>
+              <Link
+                href="/courses"
+                className={`cursor-pointer hover:text-gray-500 ${
+                  pathname === "/courses" ? "text-[#8061FF] font-semibold" : ""
+                }`}
+                onClick={() => setMenuOpen(false)}
+              >
+                Courses
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className={`cursor-pointer hover:text-gray-500 ${
+                  pathname === "/contact" ? "text-[#8061FF] font-semibold" : ""
+                }`}
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact us
+              </Link>
             </li>
           </ul>
 

@@ -20,7 +20,7 @@ const Footer = () => {
           <Image src={companyLogo} alt="Bytecompass Logo" />
         </div>
 
-        <nav className="flex flex-col md:flex-row gap-[2rem] md:gap-8 text-white text-lg text-center">
+        <nav className="flex flex-row mt-[1.5rem] md:flex-row gap-[2rem] md:gap-8 text-white text-lg text-center">
           <a href="#" className="hover:opacity-80 transition">
             About us
           </a>
