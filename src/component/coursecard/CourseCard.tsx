@@ -4,7 +4,7 @@ import ArrowIcon from "../../assets/icon/ic_arrow.svg";
 import { poppins } from "../../../public/fonts/fonts";
 
 interface CourseCardProps {
-  imageUrl: string;
+  imageUrl?: string;
   level: string;
   title: string;
   description: string;

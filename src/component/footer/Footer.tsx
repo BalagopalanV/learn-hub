@@ -33,7 +33,7 @@ const Footer = () => {
         </nav>
       </div>
 
-      <div className="container my-[4rem]  flex mx-auto flex-col md:flex-row justify-between w-full items-center gap-[2rem]">
+      <div className="container my-[0rem] md:my-[4rem]  flex mx-auto flex-col-reverse md:flex-row justify-between w-full items-center gap-[2rem]">
         <div className="w-full  md:w-auto flex items-center flex-col md:flex-row gap-[2rem] md:gap-[4rem] order-2 md:order-1">
           <div className="flex items-center gap-2 md:gap-1 md:flex-col md:items-start order-2 md:order-none">
             <Image src={phoneIcon} alt="phoneicon" width={30} height={30} />
@@ -46,17 +46,21 @@ const Footer = () => {
               contact@bytecompass.tech
             </span>
           </div>
+          <div className="flex items-center gap-2 md:gap-1 md:flex-col md:items-end order-1 md:order-2">
+            <Image src={loctionIcon} alt="locicon" width={30} height={30} />
+            <span className="text-center md:text-right">
+              Madurai, Tamil Nadu, India
+            </span>
+          </div>
         </div>
 
-        <div className="flex items-center gap-2 md:gap-1 md:flex-col md:items-end order-1 md:order-2">
-          <Image src={loctionIcon} alt="locicon" width={30} height={30} />
-          <span className="text-center md:text-right">
-            Madurai, Tamil Nadu, India
-          </span>
+        <div className="flex items-center gap-2 md:gap-1 md:flex-col md:items-start order-1 md:order-2">
+          <div className="w-1 h-10" />
+          <span className="text-center md:text-right">Privacy policy</span>
         </div>
       </div>
 
-      <div className="my-[2rem] md:my-[1rem] container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+      {/* <div className="my-[2rem] md:my-[1rem] container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
         <div className="flex items-center items-start">Privacy policy</div>
         <div className="flex items-center gap-[1rem] items-start">
           <Image src={instaIcon} alt="locicon" width={30} height={30} />{" "}
@@ -64,7 +68,7 @@ const Footer = () => {
           <Image src={DribbleIcon} alt="locicon" width={30} height={30} />
           <Image src={xIcon} alt="locicon" width={30} height={30} />
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

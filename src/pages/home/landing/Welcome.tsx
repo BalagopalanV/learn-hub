@@ -41,7 +41,7 @@ const Welcome = () => {
           <p
             className={`${poppins.className} text-uppercase bg-gradient-to-r from-[#FFFFFF] to-[#DFEAFD] bg-clip-text text-transparent tracking-wide font-light`}
           >
-            WE’RE NOT JUST ANOTHER TRAINING INSTITUDE
+            WE’RE NOT JUST ANOTHER TRAINING INSTITUTE
           </p>
           <hr className="w-full h-[1px] border-0 bg-gradient-to-r from-[#D7E5FD] to-[#D7E5FD] mx-0" />
           <h1

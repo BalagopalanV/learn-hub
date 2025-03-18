@@ -4,7 +4,7 @@ import iconArrow from "../../assets/icon/ic_arrow.svg";
 import { poppins } from "../../../public/fonts/fonts";
 
 interface InfoCardCardProps {
-  imageUrl: any;
+  imageUrl?: any;
   title: string;
   description: string;
   link?: string;

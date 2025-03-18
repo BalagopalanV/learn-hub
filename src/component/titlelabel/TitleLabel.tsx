@@ -2,8 +2,8 @@ import React from "react";
 import { poppins } from "../../../public/fonts/fonts";
 
 interface TitleLabelProps {
-  label: String;
-  title: String;
+  label: string;
+  title: string;
 }
 
 const TitleLabel: React.FC<TitleLabelProps> = ({ label, title }) => {
