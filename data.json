@@ -1,0 +1,104 @@
+{
+  "categories": [
+    {
+      "category": "Front-End Development",
+      "levels": [
+        {
+          "id": 1,
+          "title": "React.js for Beginners",
+          "description": "Learn the fundamentals of React.js, including components, state, and props, to build interactive UIs.",
+          "category": "Front-End Development",
+          "level": "Beginner",
+          "duration": "6 months - 1 year",
+          "software": ["JavaScript", "React.js"],
+          "price": "1,200"
+        },
+        {
+          "id": 2,
+          "title": "Advanced React.js",
+          "description": "Deep dive into React.js with hooks, context API, and performance optimization techniques.",
+          "category": "Front-End Development",
+          "level": "Intermediate",
+          "duration": "6 months - 1 year",
+          "software": ["JavaScript", "React.js"],
+          "price": "1,000"
+        }
+      ]
+    },
+    {
+      "category": "Back-End Development",
+      "levels": [
+        {
+          "id": 3,
+          "title": "Node.js and Express.js",
+          "description": "Build powerful server-side applications using Node.js, Express.js, and RESTful APIs.",
+          "category": "Back-End Development",
+          "level": "Intermediate",
+          "duration": "1 - 2 years",
+          "software": ["Node.js", "Express.js"],
+          "price": "1,200"
+        }
+      ]
+    },
+    {
+      "category": "Full Stack Development",
+      "levels": [
+        {
+          "id": 4,
+          "title": "Full-Stack Development",
+          "description": "Master both front-end and back-end technologies, including React, Node.js, and MongoDB.",
+          "category": "Full Stack Development",
+          "level": "Intermediate",
+          "duration": "1 - 2 years",
+          "software": ["JavaScript", "Node.js", "React.js", "MongoDB"],
+          "price": "1,200"
+        }
+      ]
+    },
+    {
+      "category": "UI/UX Design",
+      "levels": [
+        {
+          "id": 5,
+          "title": "Advanced UI/UX Design",
+          "description": "Learn user research, wireframing, prototyping, and usability testing to design intuitive digital experiences.",
+          "category": "UI/UX Design",
+          "level": "Beginner",
+          "duration": "6 months - 1 year",
+          "software": ["Figma", "Adobe XD"],
+          "price": "1,200"
+        }
+      ]
+    },
+    {
+      "category": "Mobile App Development",
+      "levels": [
+        {
+          "id": 6,
+          "title": "Mobile App Development with Flutter",
+          "description": "Build cross-platform mobile applications using Flutter and Dart.",
+          "category": "Mobile App Development",
+          "level": "Intermediate",
+          "duration": "1 - 2 years",
+          "software": ["Flutter", "Dart"],
+          "price": "1,200"
+        }
+      ]
+    },
+    {
+      "category": "Database Management",
+      "levels": [
+        {
+          "id": 7,
+          "title": "Database Management with SQL",
+          "description": "Learn SQL fundamentals, database normalization, and advanced querying techniques with PostgreSQL.",
+          "category": "Database Management",
+          "level": "Beginner",
+          "duration": "6 months - 1 year",
+          "software": ["SQL", "PostgreSQL"],
+          "price": "1,200"
+        }
+      ]
+    }
+  ]
+}

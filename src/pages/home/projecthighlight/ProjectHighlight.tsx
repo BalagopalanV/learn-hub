@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "@/component/projectcard/ProjectCard";
-import ClockImage from "../../../assets/icon/ic_book.svg";
 import { poppins } from "../../../../public/fonts/fonts";
 import iconLed from "../../../assets/icon/ic_led_tran.svg";
 import iconWorldPrj from "../../../assets/icon/ic_world_prj.svg";
@@ -40,7 +39,7 @@ const ProjectHighlight = () => {
         What Sets Us Apart
       </h5>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-0 sm:px-[3rem] my-[4rem]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-0 sm:px-[3rem] mt-[4rem]">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

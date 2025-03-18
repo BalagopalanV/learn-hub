@@ -81,7 +81,7 @@ const Navbar = () => {
 
           <div className="mt-8 w-full max-w-xs">
             <input
-              type="text"
+              type="search"
               placeholder="Search..."
               className="text-base px-4 py-3 w-full rounded-full bg-gray-100 outline-none"
             />
