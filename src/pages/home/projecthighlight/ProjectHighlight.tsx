@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ProjectCard from "@/component/projectcard/ProjectCard";
 import { poppins } from "../../../../public/fonts/fonts";
