@@ -19,11 +19,11 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex items-center rounded-lg h-full w-full  
+      className={`flex items-center rounded-lg h-fit w-full  
       ${iconPosition === "center" ? "flex-col text-center" : "flex-row"}
       ${iconPosition === "right" ? "flex-row-reverse" : ""}`}
     >
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 w-[150px] h-full rounded-full flex items-center justify-center">
         <Image
           src={icon}
           alt={title}
@@ -34,12 +34,17 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       </div>
       <div className="ml-4">
         <h3
-          className={`${poppins.className} uppercase text-[1.5rem] font-semibold ${textColor}`}
+          className={`${poppins.className} uppercase text-[1.5rem] font-bold `}
+          style={{
+            ...(iconPosition === "right" ? { textAlign: "right" } : {}),
+            color: textColor,
+          }}
         >
           {title}
         </h3>
         <p
           className={`${poppins.className} font-light text-[0.8rem] text-[#111]`}
+          style={iconPosition === "right" ? { textAlign: "right" } : {}}
         >
           {description}
         </p>

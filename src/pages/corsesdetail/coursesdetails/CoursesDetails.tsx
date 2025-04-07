@@ -8,13 +8,14 @@ import { poppins } from "../../../../public/fonts/fonts";
 
 const CoursesDetails = () => {
   return (
-    <section className="max-w-[1700px] mx-auto p-[10px] font-sans font-extrabold h-[100vh] w-full flex items-end">
-      <div className="w-full h-[85%] bg-[#0078E1] rounded-[25px] px-5 py-5 flex md:flex-row flex-col items-center justify-between">
+    <section className="max-w-[1700px] mx-auto p-[10px] md:mt-[0rem] mt-[3rem] font-sans font-extrabold h-[100vh] w-full flex items-end">
+      <div className="w-full  h-auto md:h-[85%] bg-[#0078E1] rounded-[25px] px-5 py-5 flex md:flex-row flex-col items-center justify-between">
         <div className="flex-[0.5] h-full">
           <Image
             src={postImage}
             alt="Frontend Development"
             className="w-[100%] h-[100%]"
+            priority
           />
         </div>
         <div className="flex-[0.5] h-full ">
@@ -42,10 +43,10 @@ const CoursesDetails = () => {
               Learn how to build modern, interactive, and user-friendly websites
               with HTML, CSS, JavaScript, and the latest front-end frameworks.
             </p>
-            <div className="flex flex-row items-center gap-4 ">
+            <div className="flex flex-col md:flex-row items-center gap-4 ">
               {/* Duration Card */}
-              <div className="flex flex-row gap-4">
-                <div className="bg-[#3393E7] border-[1px]  border-[#4DA1EA] flex flex-col items-center text-white px-4 gap-6 py-4 rounded-xl text-center w-28">
+              <div className="w-[100%] md:w-auto flex md:flex-row gap-4">
+                <div className="bg-[#3393E7] w-full border-[1px] w-full  border-[#4DA1EA] flex flex-row md:flex-col items-center text-white px-4 gap-6 py-4 rounded-xl text-center md:w-28">
                   <p
                     className={`${poppins.className} font-semibold text-[0.8rem]`}
                   >
@@ -56,7 +57,7 @@ const CoursesDetails = () => {
                   </div>
                 </div>
 
-                <div className="bg-[#3393E7] border-[1px] border-[#4DA1EA] flex flex-col items-center text-white px-4 gap-6 py-4 rounded-xl text-center w-28">
+                <div className="bg-[#3393E7] border-[1px] w-full border-[#4DA1EA] flex flex-row md:flex-col items-center text-white px-4 gap-6 py-4 rounded-xl text-center md:w-28">
                   <p
                     className={`${poppins.className} font-semibold text-[0.8rem]`}
                   >
@@ -68,7 +69,7 @@ const CoursesDetails = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="md:w-auto w-full">
                 <div className="bg-[#3393E7]  border-[1px] border-[#4DA1EA]  px-6 py-3 rounded-xl flex items-center space-x-4  justify-between">
                   <div className="flex flex-row gap-x-2">
                     <p
