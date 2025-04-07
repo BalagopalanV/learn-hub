@@ -47,7 +47,7 @@ const WhoShouldEnroll = () => {
   };
 
   return (
-    <section className="max-w-[1700px] mx-auto p-[10px] font-sans font-extrabold h-auto md:h-[100vh] w-full flex items-center">
+    <section className="max-w-[1700px] mx-auto p-4  font-sans font-extrabold h-auto md:h-[100vh] w-full flex items-center">
       <div className="w-full h-[80%]">
         <div className="flex-[1] h-full flex flex-col md:flex-row gap-6">
           <div className="flex-[0.5] felx felx-row">

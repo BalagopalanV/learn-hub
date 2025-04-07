@@ -8,7 +8,7 @@ import { poppins } from "../../../../public/fonts/fonts";
 
 const CoursesDetails = () => {
   return (
-    <section className="max-w-[1700px] mx-auto p-[10px] md:mt-[0rem] mt-[3rem] font-sans font-extrabold h-[100vh] w-full flex items-end">
+    <section className="max-w-[1700px] mx-auto p-4  md:mt-[0rem] mt-[3rem] font-sans font-extrabold h-[100vh] w-full flex items-end">
       <div className="w-full  h-auto md:h-[85%] bg-[#0078E1] rounded-[25px] px-5 py-5 flex md:flex-row flex-col items-center justify-between">
         <div className="flex-[0.5] h-full">
           <Image

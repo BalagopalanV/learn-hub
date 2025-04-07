@@ -46,8 +46,8 @@ const CourseHighLight = () => {
     },
   ];
   return (
-    <section className="max-w-7xl mx-auto p-4 font-sans h-auto">
-      <div className="max-w-7xl mx-auto p-4 font-sans rounded-[20px] bg-[#ECEEFF] h-auto">
+    <section className="mx-auto p-4 font-sans h-auto">
+      <div className="mx-auto p-4 font-sans rounded-[20px] bg-[#ECEEFF] h-auto">
         <h5
           className={`${poppins.className} text-center font-medium text-[#1F2131] text-[1rem] md:text-[1.7rem] my-6 md:my-12`}
         >

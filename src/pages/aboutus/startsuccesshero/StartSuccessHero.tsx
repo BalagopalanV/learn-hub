@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import { poppins } from "../../../../public/fonts/fonts";
-
+import { useRouter } from "next/navigation";
 const StartSuccessHero = () => {
+  const router = useRouter();
+
   return (
     <section className="w-full h-[60vh] md:h-[100vh] flex flex-col items-center justify-center text-center px-5 py-[5rem]">
       <h1
@@ -18,7 +21,8 @@ const StartSuccessHero = () => {
       </p>
 
       <button
-        className={`${poppins.className} mt-6 bg-[#8061FF] text-[#FDFDFD] px-6 py-4 rounded-full text-[1.1rem] font-semi shadow-md hover:bg-purple-600 transition-all`}
+        className={`${poppins.className} mt-6 bg-[#8061FF] cursor-pointer text-[#FDFDFD] px-6 py-4 rounded-full text-[1.1rem] font-semi shadow-md hover:bg-purple-600 transition-all`}
+        onClick={() => router.push("/courses")}
       >
         Explore Courses
       </button>

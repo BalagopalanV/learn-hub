@@ -4,10 +4,11 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import ic_navbar from "../../assets/icon/ic_navbar.svg";
-
+import { useRouter } from "next/navigation";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     if (menuOpen) {
@@ -32,7 +33,12 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
-          <Image src={ic_navbar} alt="Logo" />
+          <Image
+            src={ic_navbar}
+            alt="Logo"
+            className="cursor-pointer"
+            onClick={() => router.push("/")}
+          />
         </div>
 
         <ul className="hidden md:flex gap-x-6 text-black text-[1rem]">
@@ -40,7 +46,7 @@ const Navbar = () => {
             <Link
               href="/about-us"
               className={`cursor-pointer hover:text-gray-500 ${
-                pathname === "/about" ? "text-[#8061FF] font-semibold" : ""
+                pathname === "/about-us" ? "text-[#8061FF] font-semibold" : ""
               }`}
             >
               About us
@@ -50,17 +56,22 @@ const Navbar = () => {
             <Link
               href="/courses"
               className={`cursor-pointer hover:text-gray-500 ${
-                pathname === "/courses" ? "text-[#8061FF] font-semibold" : ""
+                pathname === "/courses" || pathname === "/courses-details"
+                  ? "text-[#8061FF] font-semibold"
+                  : ""
               }`}
             >
               Courses
             </Link>
           </li>
+        </ul>
+
+        <ul className="hidden md:flex gap-x-6 text-black text-[1rem]">
           <li>
             <Link
-              href="/contact"
+              href="/contact-us"
               className={`cursor-pointer hover:text-gray-500 ${
-                pathname === "/contact" ? "text-[#8061FF] font-semibold" : ""
+                pathname === "/contact-us" ? "text-[#8061FF] font-semibold" : ""
               }`}
             >
               Contact us
@@ -68,13 +79,14 @@ const Navbar = () => {
           </li>
         </ul>
 
+        {/* 
         <div className="hidden md:block">
           <input
             type="text"
             placeholder="Search..."
             className="text-base px-4 py-2 rounded-full bg-gray-100 outline-none w-[150px] md:w-[200px]"
           />
-        </div>
+        </div> */}
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}

@@ -11,7 +11,8 @@
           "level": "Beginner",
           "duration": "6 months - 1 year",
           "software": ["JavaScript", "React.js"],
-          "price": "1,200"
+          "price": "1,200",
+          "link": "/courses-details"
         },
         {
           "id": 2,
@@ -21,7 +22,8 @@
           "level": "Intermediate",
           "duration": "6 months - 1 year",
           "software": ["JavaScript", "React.js"],
-          "price": "1,000"
+          "price": "1,000",
+          "link": "/courses-details"
         }
       ]
     },
@@ -36,7 +38,8 @@
           "level": "Intermediate",
           "duration": "1 - 2 years",
           "software": ["Node.js", "Express.js"],
-          "price": "1,200"
+          "price": "1,200",
+          "link": "/courses-details"
         }
       ]
     },
@@ -51,7 +54,8 @@
           "level": "Intermediate",
           "duration": "1 - 2 years",
           "software": ["JavaScript", "Node.js", "React.js", "MongoDB"],
-          "price": "1,200"
+          "price": "1,200",
+          "link": "/courses-details"
         }
       ]
     },
@@ -66,7 +70,8 @@
           "level": "Beginner",
           "duration": "6 months - 1 year",
           "software": ["Figma", "Adobe XD"],
-          "price": "1,200"
+          "price": "1,200",
+          "link": "/courses-details"
         }
       ]
     },
@@ -96,7 +101,8 @@
           "level": "Beginner",
           "duration": "6 months - 1 year",
           "software": ["SQL", "PostgreSQL"],
-          "price": "1,200"
+          "price": "1,200",
+          "link": "/courses-details"
         }
       ]
     }

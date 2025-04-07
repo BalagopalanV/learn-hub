@@ -62,7 +62,7 @@ const Faq = () => {
     },
   ];
   return (
-    <section className="max-w-[1700px] mx-auto h-auto md:h-[100vh] w-full flex flex-col justify-center items-center my-[2rem] px-4">
+    <section className="max-w-[1700px] mx-auto h-auto md:h-[100vh] w-full flex flex-col justify-center items-center my-[2rem] p-4 ">
       <div className="w-full w-[95%] bg-[#F2F0F0] rounded-[15px] border-[1px] border-[#8D8D8D] p-4 text-center overflow-y-auto">
         {accordionData.map((item, index) => (
           <Accordion

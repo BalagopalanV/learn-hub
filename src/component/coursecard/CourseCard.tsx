@@ -20,7 +20,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   description,
   price,
   duration,
-  link = "#",
+  link,
 }) => {
   return (
     <div

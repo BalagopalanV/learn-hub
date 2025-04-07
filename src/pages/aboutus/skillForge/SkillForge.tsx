@@ -21,7 +21,7 @@ const SkillForge = () => {
   }, []);
   return (
     <section
-      className="w-full min-h-screen md:h-[100vh] rounded-[25px] flex flex-col items-center justify-center md:justify-end py-8 md:py-0"
+      className="w-full min-h-screen md:h-[100vh]  rounded-[25px] flex flex-col items-center justify-center md:justify-end py-8 md:py-0"
       style={{
         backgroundImage: isMobile
           ? `url(${mobBackgroundImageLayer.src})`
